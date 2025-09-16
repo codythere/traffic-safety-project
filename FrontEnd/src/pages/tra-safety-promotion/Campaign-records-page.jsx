@@ -9,25 +9,23 @@ export default function CampaignRecordsPage() {
   return (
     <>
       <section className="w-full  p-[20px]  mx-auto flex flex-col justify-center items-center text-center">
-        <div className=" lg:pr-[700px]">
-          <div className="flex flex-col mt-[55px]">
-            <div>
-              <h2 className="text-[#000000] text-[29.16px] sm:text-[34.02px] font-semibold select-none text-center lg:text-start">
-                交安活動照片
-              </h2>
+        <div className="w-full flex flex-col sm:flex-row justify-center items-center px-[50px] sm:gap-[60px]">
+          <div className="sm:pb-[150px]">
+            <div className="flex flex-col items-start mt-[55px]">
+              <div>
+                <h2 className="text-[#000000] text-[29.16px] sm:text-[34.02px] font-semibold select-none text-center lg:text-start">
+                  交安活動照片
+                </h2>
+              </div>
+              <div>
+                <h3 className="text-[#006794] text-[18.856px] sm:text-[22px] font-semibold select-none text-center lg:text-start">
+                  Traffic Safety Campaign Record
+                </h3>
+              </div>
             </div>
-            <div>
-              <h3 className="text-[#006794] text-[18.856px] sm:text-[22px] font-semibold select-none text-center lg:text-start">
-                Traffic Safety Campaign Record
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex flex-row justify-center items-center pb-[30px] px-[50px] gap-[60px]">
-          <div className="pb-[200px]">
             <SelectedListItem setCurrentAlbum={setCurrentAlbum} />
           </div>
-          <div className="pb-[30px]">
+          <div className="pb-[80px]">
             <Carousel
               data={currentAlbum}
               time={2250}
