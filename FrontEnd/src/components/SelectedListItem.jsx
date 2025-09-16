@@ -24,7 +24,7 @@ export default function SelectedListItem({ setCurrentAlbum }) {
   };
 
   return (
-    <div className="hidden lg:block">
+    <div>
       <Box sx={{ width: "100%", maxWidth: 360 }}>
         <List component="nav" aria-label="main mailbox folders">
           <ListItemButton
